@@ -47,7 +47,7 @@ Plotly.newPlot('myDiv', data, layout);
 
 
 function graf(stl){
-    d3.csv("Table1.csv", function(data) {
+    d3.csv("https://raw.githubusercontent.com/LeiHuang-statistician/Webpages/main/Table1.csv", function(data) {
        group=data.filter(row=>row.Group===stl)
        //col=data.columns
        x=group.map(function(row){return row.x});
